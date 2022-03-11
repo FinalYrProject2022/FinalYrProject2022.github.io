@@ -93,7 +93,7 @@
 							<input class="form-check-input" type="checkbox" role="switch" id="soil_moisture"
 								onclick="myFunction()">
 							<label class="form-check-label" for="soil_moisture"><b
-									id="soil_moisture_text">OFF</b></label>
+									id="soil_moisture_text">WATER NOT DETECTED</b></label>
 						</div>
 					</article>
 					<article>
@@ -183,7 +183,7 @@
 					}
 					if (soil_moisture.checked == true)
 					{
-						document.getElementById("soil_moisture_text").innerHTML = "ON";
+						document.getElementById("soil_moisture_text").innerHTML = "WATER DETECTED";
 					}
 
 					if (live_cam.checked != true)
@@ -200,7 +200,7 @@
 					}
 					if (soil_moisture.checked != true)
 					{
-						document.getElementById("soil_moisture_text").innerHTML = "OFF";
+						document.getElementById("soil_moisture_text").innerHTML = "WATER NOT DETECTED";
 					}
 				}
 			</script>
